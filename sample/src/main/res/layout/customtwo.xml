@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/PaleGoldenrod">
+
+        <TextView
+            android:id="@+id/textVie"
+            android:layout_width="match_parent"
+            android:background="@color/Chocolate"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:gravity="center"
+            android:text="Warning"
+            android:textColor="@color/White"
+            android:textSize="25sp"
+            android:textStyle="italic"/>
+
+        <RelativeLayout
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textVie"
+            android:gravity="center"
+            android:paddingTop="30dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Please make sure..! You have entered correct password..! Remaining One Chance"
+                android:textColor="@color/Chocolate"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/first"
+
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/Chocolate"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:text="Ok"
+                android:enabled="true"
+                android:textColor="@color/White"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
